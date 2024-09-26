@@ -31,7 +31,23 @@ Scanner scanner = new Scanner(System.in);
                 resultado = num1 * num2;
                 System.out.println("Resultado: " + resultado);
                 break;
-
+                case '/':
+                if (num2 != 0) {
+                    resultado = num1 / num2;
+                    System.out.println("Resultado: " + resultado);
+                } else {
+                    System.out.println("Error: División por cero.");
+                }
+                break;
+            default:
+                System.out.println("Operación no válida.");
+                break;
+        }
+ 
+        // Cerrar el escáner
+        scanner.close();
+    }
+}
 
 }
 
